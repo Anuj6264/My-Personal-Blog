@@ -1,0 +1,56 @@
+<%- include('Partials/header') %>
+
+<h1>Compose</h1>
+
+
+<div class="compose">
+    <form action="/compose" method="POST">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" name="PostTitle" id="search-church" placeholder="">
+            <label for="">Post</label>
+            <textarea type="text" class="form-Control" name="PostContent" rows="8" cols="160"></textarea>
+        </div>
+        <button type="submit" name="button" class="btn btn-primary">Publish</button>
+    </form>
+</div>
+
+<%- include('Partials/footer') %> 
+
+
+
+
+
+<!-- <div class="row">
+    <div class="col-lg-12">
+     <div class="input-group input-group-lg">
+       <input type="text" class="form-control input-lg" id="search-church" placeholder="Your location (City, State, ZIP)">
+       <span class="input-group-btn">
+       </span>
+     </div>
+   </div>
+ </div> -->
+
+
+<!-- orignal form
+
+
+
+
+
+<!-- <form action="/compose" method="POST">  
+    <h3>Title</h3>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" name="PostTitle">
+        </div><!-- /input-group -->
+        <!-- <div class="input-group input-group-lg">
+            <input type="text" class="form-Control"name="PostContent">
+        </div>
+        <div class="input-group-btn">
+            <button type="submit" class="btn">Search</button>
+        </div><!-- /btn-group -->
+      <!-- </div><!-- /.col-xs-12 -->
+    <!-- </div><!-- /.row -->
+<!-- </form> --> 

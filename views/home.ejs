@@ -1,0 +1,28 @@
+<%- include('Partials/header'); %> 
+
+
+<h1>HOME</h1>
+
+<%= paragraph %> 
+
+    <% posts.forEach(function(i){%>
+    <h1> <%= i.title %></h1>
+    <p> 
+        <%= i.content.substr(0,130) + "..."%>
+        <a href="post/<%=i.title %> ">Read more</a>
+    </p>
+<% }) %>
+<br>
+
+
+<a href="/compose" class="btn btn-primary" style="margin-top: 20px ;">Compose</a>
+<!-- <form action="/compose" method="GET">
+    <button style="margin-top: 20px;"type="submit" name="submit" value="submit"class="btn btn-primary">Compose</button>
+</form> -->
+
+
+
+ 
+
+
+<%- include('Partials/footer') %> 
